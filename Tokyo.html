@@ -1,0 +1,144 @@
+<html>
+<head>
+<link rel="icon"
+type="image/png"
+href="http://worldartsme.com/images/airplane-cartoon-free-clipart-1.jpg" />
+<style>
+
+ul {
+	list-syle-type: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+}
+
+.navitem a:hover{
+
+	color:red;
+
+}
+
+li {
+
+	float: left;
+	border-right: 1px solid #bbb;
+	
+}
+
+li a {
+
+	display: block;
+    color: White;
+    background-color: Black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    
+}
+
+
+h1 {
+
+	line-height: 600%;
+	text-align: center;
+	
+}
+
+h2 {
+
+	line-height: 200%;
+
+}
+
+body{
+
+
+	color: white;
+	background-image: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+	url("http://orig15.deviantart.net/30c8/f/2008/005/b/1/ancient_world_map_by_bilui.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: cover; 
+		font-family: ' Baloo Taaji ', sans-serif
+
+}
+
+
+</style>
+
+
+
+
+	
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+
+
+
+function initialize() {
+
+//Map 1
+
+  var mapProp = {
+    center:new google.maps.LatLng(35.70913,139.736481),
+    zoom:10,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+  var map= new google.maps.Map(document.getElementById("map1"),mapProp);
+  var marker= new google.maps.Marker ({position: mapProp});
+  marker.setMap(map);
+  
+//Map 2
+
+  var mapProp2 = {
+  	center:new google.maps.LatLng(35.6802378,139.765753),
+    zoom:18,
+    mapTypeId:google.maps.MapTypeId.SATELLITE
+};
+  var map2 = new google.maps.Map(document.getElementById("map2"),mapProp2);
+
+
+};
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+  
+</script>
+</head>
+
+<body>
+
+<ul style="list-style-type: none;">
+
+				<li class ="navitem"><a href="MapHub.html">Home</a></li>
+				<li class ="navitem"><a href="Chengdu.html">Chengdu</a></li>
+				<li class ="navitem"><a href="Tokyo.html">Tokyo</a></li>
+				<li class ="navitem"><a href="Cuba.html">Cuba</a></li>
+				<li class ="navitem"><a href="Dream_Vacation_Sources.html">Sources</a></li>
+</ul>
+
+<h1>Tokyo</h1>
+<div id="map1" style="width:100%;height:250px;"></div>
+<h2>A Coastal Jewel</h2>
+<p1>Japanese cities are some of the only places to experience such raw culture at the same time as raw fish.</p1>
+<p2>Being within close proximity to the ocean, Tokyo may be one of the most impacted city by Japan's unique circumstances.</p2>
+<p3>Similarly to Chinese cities, Tokyo is also well known for its exclusively coastal cuisine, stunning parks, and their very own Ramen Street!</p3>
+<p4>The picture below is the Port of Japan, which models how connected this nation is to the sea.</p4>
+<img src="http://www.kouwan.metro.tokyo.jp/en/portoftokyo.jpg"
+style = "width:100%;height:80%">
+<h3>The Sights</h3>
+<p1>Being influenced so much by the sea, the entire landmass of Japan yields exclusive experiences that can only be sampled by going there. For example, The restaurants found there contain a wide variety of seafood, other rarities.</p1>
+<p2>Japan is also known for its ever expanding fish market, one of the largest in the world!</p2>
+<p3>However, Japan isn't only known for its seafood, as proven by its highly competitive Ramen Street!</p3>
+<p4>As the name implies, Ramen Street is a street lined completely with the most popular ramen shops in Japan, and disputably the world.</p4>
+<p5>The owners of restaurants on this street are bound by rules that state that if another ramen restaurant becomes more popular than theirs, then they must yield their position on Ramen Street to that restaurant. Talk about a food fight!</p5>
+<div id="map2" style="width:100%;height:500px;"></div>
+</body>
+</html>

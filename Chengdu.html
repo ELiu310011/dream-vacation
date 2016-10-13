@@ -1,0 +1,145 @@
+<html>
+<head>
+<link rel="icon"
+type="image/png"
+href="http://worldartsme.com/images/airplane-cartoon-free-clipart-1.jpg" />
+<style>
+
+ul {
+	list-syle-type: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+}
+
+.navitem a:hover{
+
+	color:red;
+
+}
+
+li {
+
+	float: left;
+	border-right: 1px solid #bbb;
+	
+}
+
+li a {
+
+	display: block;
+    color: White;
+    background-color: Black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    
+}
+
+
+h1 {
+
+	line-height: 600%;
+	text-align: center;
+	
+}
+
+h2 {
+
+	line-height: 300%;
+}
+
+h3 {
+
+	line-height: 300%;
+
+}
+
+body{
+
+
+	color: white;
+	background-image: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+	url("http://orig15.deviantart.net/30c8/f/2008/005/b/1/ancient_world_map_by_bilui.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: cover; 
+		font-family: ' Baloo Taaji ', sans-serif
+
+}
+
+
+</style>
+
+
+
+
+
+
+	
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+
+
+
+function initialize() {
+
+//Map 1
+
+  var mapProp = {
+    center:new google.maps.LatLng(30.672816,104.066801),
+    zoom:10,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+  var map= new google.maps.Map(document.getElementById("map1"),mapProp);
+  var marker= new google.maps.Marker ({position: mapProp});
+  marker.setMap(map);
+
+//Map 2
+
+  var mapProp2 = {
+  	center:new google.maps.LatLng(30.660888,104.031789),
+    zoom:20,
+    mapTypeId:google.maps.MapTypeId.SATELLITE
+};
+  var map2 = new google.maps.Map(document.getElementById("map2"),mapProp2);
+};
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+  
+</script>
+</head>
+
+<body>
+
+<ul style="list-style-type: none;">
+
+				<li class ="navitem"><a href="MapHub.html">Home</a></li>
+				<li class ="navitem"><a href="Chengdu.html">Chengdu</a></li>
+				<li class ="navitem"><a href="Tokyo.html">Tokyo</a></li>
+				<li class ="navitem"><a href="Cuba.html">Cuba</a></li>
+				<li class ="navitem"><a href="Dream_Vacation_Sources.html">Sources</a></li>
+</ul>
+
+<h1>Chengdu</h1>
+<div id="map1" style="width:100%;height:250px;"></div>
+<h2>A Grand City of Blossoming Diversity</h2>
+<p1>As one of China's most central cities, Chengdu serves as a gathering of centuries of the country's culture and legacy.</p1>
+<p2>Because it is so, Chengdu has an extremely diverse religious, ethnic, and culinary atmosphere unlike any other Chinese city.</p2>
+<p3>When traveling here, it is essential that one samples as much of this culture as possible, by visiting its many recreational parks and restaurants.</p3> 
+<img src="http://blog.hutong-school.com/wp-content/uploads/2014/05/Chengdu.jpg"
+style = "width:100%;height:80%">
+<h3>The Sights</h3>
+<p1>Similar to the rest of the Middle East, Chengdu offers a wide variety of breathtaking sites to behold, including vast mountain ranges, expansive, green plains, and the occasional blue lake.</p1>
+<p2>One of these scenic sites, Huanhuaxi Park, is one of many that boasts all of the previously stated facets, and offers its share of history and Chinese culture.</p2>
+<div id="map2" style="width:100%;height:500px;"></div>
+</body>
+</html>

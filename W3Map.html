@@ -1,0 +1,45 @@
+<html>
+
+<body>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  //myCenter is a latitude/longitude object. It stores a point/location.
+  
+  var mapCanvas = document.getElementById("map");
+  //mapCanvas stores the link to the div that the map will go in.
+  
+  var mapOptions = {center: myCenter,
+   	  zoom: 5
+};
+//stores the options for the map. 
+//Note: we used myCenter, the variable storing the point, in the center option.
+
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  //Creates the map itself. 
+  //We gave it the variables for the mapCanvas ( where to put it and mapOptions ( what it will look like ) ).
+  
+  var marker = new google.maps.Marker({position:myCenter});
+  //Creates a new marker at the myCenter location 
+  //We used that myCenter LatLng variable again
+  marker.setMap(map);
+  //follows object.method() notation.
+  //The marker is the object. It's being told to set its
+  //map to the map created two lines up.
+  //This puts the marker on the map. 
+  var origin = new google.maps.LatLng(0,0);
+  var marker2 = new google.maps.Marker({position:origin});
+  marker2.setmap(map);
+  
+ 
+  
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</body>
+</html>

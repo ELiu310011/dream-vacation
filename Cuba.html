@@ -1,0 +1,142 @@
+<html>
+<head>
+<link rel="icon"
+type="image/png"
+href="http://worldartsme.com/images/airplane-cartoon-free-clipart-1.jpg" />
+<style>
+
+ul {
+	list-syle-type: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+}
+
+.navitem a:hover{
+
+	color:red;
+
+}
+
+li {
+
+	float: left;
+	border-right: 1px solid #bbb;
+	
+}
+
+li a {
+
+	display: block;
+    color: White;
+    background-color: Black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    
+}
+
+
+h1 {
+
+	line-height: 600%;
+	text-align: center;
+	
+}
+
+h2 {
+
+	line-height: 200%;
+
+}
+
+body{
+
+
+	color: white;
+	background-image: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+	url("http://orig15.deviantart.net/30c8/f/2008/005/b/1/ancient_world_map_by_bilui.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: cover; 
+		font-family: ' Baloo Taaji ', sans-serif
+
+}
+
+
+
+</style>
+
+
+
+
+	
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+
+
+
+function initialize() {
+
+//Map 1
+
+  var mapProp = {
+    center:new google.maps.LatLng(22.0086180,-78.9517581),
+    zoom:7,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+  var map= new google.maps.Map(document.getElementById("map1"),mapProp);
+  var marker= new google.maps.Marker ({position: mapProp});
+  marker.setMap(map);
+  
+//Map 2
+
+  var mapProp2 = {
+  	center:new google.maps.LatLng(19.9686996,-75.8710396),
+    zoom:18,
+    mapTypeId:google.maps.MapTypeId.SATELLITE
+};
+  var map2 = new google.maps.Map(document.getElementById("map2"),mapProp2);
+
+
+};
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+  
+</script>
+</head>
+
+<body>
+
+<ul style="list-style-type: none;">
+
+				<li class ="navitem"><a href="MapHub.html">Home</a></li>
+				<li class ="navitem"><a href="Chengdu.html">Chengdu</a></li>
+				<li class ="navitem"><a href="Tokyo.html">Tokyo</a></li>
+				<li class ="navitem"><a href="Cuba.html">Cuba</a></li>
+				<li class ="navitem"><a href="Dream_Vacation_Sources.html">Sources</a></li>
+</ul>
+
+<h1>Cuba</h1>
+<div id="map1" style="width:100%;height:250px;"></div>
+<h2>The Western Wonder</h2>
+<p1>As our westernmost destination on this trip, Cuba has vastly different ethnic and cultural facets than those to the east.</p1>
+<p2>Also being within close proximity to the ocean, Cuba is renowned across the world for its nearly uncountable beaches and bays, and the occasional castle or fortress.</p2>
+<p3>Below is an example of one of Cuba's many castles, this particular one residing in the south-eastern part of the landmass of Cuba.</p3>
+<img src="https://midlifecrisisgapyear.files.wordpress.com/2011/12/nov-23-048.jpg"
+style = "width:100%;height:80%">
+<h3>The Sights</h3>
+<p1>One of these castles, San Pedro de la Roca Castle, which shares both Spanish, and Cuban heritage.</p1>
+<p2>The castle was erected in the 17th century to protect the significant port of Santiago. The cannons used to defend the fort still remain, despite being rusted, on the castle's many turrets.</p2>
+<p3>Today, Fort San Pedro de la Roca Castle stands as a tribute to many cultures accumulated into such a diverse nation.</p3>
+<div id="map2" style="width:100%;height:500px;"></div>
+</body>
+</html>
