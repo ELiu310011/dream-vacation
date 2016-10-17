@@ -85,7 +85,7 @@ body{
 
 	
 
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBmAkYokPy4ZCLiUgm3pro3uguyGZRBVVo"></script>
+
 <script>
 
 
@@ -112,10 +112,12 @@ function initialize() {
 };
   var map2 = new google.maps.Map(document.getElementById("map2"),mapProp2);
 };
+google.maps.event.addDomListener(window, 'load', initialize);
 
-  google.maps.event.addDomListener(window, 'load', initialize);
   
 </script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBmAkYokPy4ZCLiUgm3pro3uguyGZRBVVo&=callback=initialize"
+async defer></script>
 </head>
 
 <body>
